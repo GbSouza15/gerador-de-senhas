@@ -1,0 +1,107 @@
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+header {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+
+    background-color: #fa780d;
+}
+
+header p {
+
+    font-size: 2rem;
+}
+
+main {
+
+    height: 100vh;
+    background-color: black;
+    padding-top: 5rem;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.btn-generator {
+
+    padding: 1rem;
+    background-color: #fa780d;
+    color: black;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: .2rem;
+    transform: scale(1.0);
+    transition: 500ms;
+    margin-top: 3rem;
+    cursor: pointer;
+}
+
+.btn-generator:hover {
+
+    transform: scale(1.1);
+    transition: 500ms;
+
+    background-color: #000000;
+    color: #fa780d;
+    border: 1px solid #fa780d;
+}
+
+.info {
+
+    background-color: #fa780d;
+    padding: 2rem;
+    border-radius: .2rem;
+
+    width: 80%;
+}
+
+.password {
+
+    background-color: #fa780d;
+    color: black;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: .2rem;
+
+    transform: scale(1.0);
+    transition: 500ms;
+
+    display: none;
+    animation: myAnim 500ms linear 0s 1 normal forwards;
+}
+
+.password:hover {
+
+    transform: scale(1.1);
+    transition: 500ms;
+    background-color: #000000;
+    color: #fa780d;
+    border: 1px solid #fa780d;
+}
+
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
